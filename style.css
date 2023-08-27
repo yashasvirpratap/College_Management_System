@@ -1,0 +1,23 @@
+body{
+    background-image: url(images/main.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.login > button{
+    height: 70px;
+    width: 200px;
+    margin-top: 350px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 500; */
+    font-size: 20px;
+    border-radius: 2%;
+    border-color: transparent;
+    transition: 0.3s;
+}
+
+.login > button:hover{
+    background-color: rgba(255, 255, 255, 0.781);
+}

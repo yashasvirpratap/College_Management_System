@@ -1,0 +1,106 @@
+<div class="demo">
+       <!--------view teacher---------->  
+
+          <?php
+
+          include 'db_conn.php';
+
+          if(isset($_POST['view_teacher']))
+          {
+            ?>
+            <center>
+                <h5>Teacher's Details</h5><br>
+                <table>
+                  <tr>
+                    <td id="td"><b>ID</b></td>
+                    <td id="td"><b>First Name</b></td>
+                    <td id="td"><b>Last Name</b></td>
+                    <td id="td"><b>Email</b></td>
+                    <td id="td"><b>Gender</b></td>
+                    <td id="td"><b>Department</b></td>
+                    <td id="td"><b>Subject</b></td>
+                    <td id="td"><b>Salary</b></td>
+                  </tr>
+                </table>
+            </center>
+            <?php
+            $query = "select * from teacherlogin";
+            $query_run = mysqli_query($con,$query);
+            while ($row = mysqli_fetch_assoc($query_run)) 
+            {
+              ?>
+              <center>
+              <table>
+                <tr>
+                  <td id="td"><?php echo $row['ID']?></td>
+                  <td id="td"><?php echo $row['First']?></td>
+                  <td id="td"><?php echo $row['Last']?></td>
+                  <td id="td"><?php echo $row['User']?></td>
+                  <td id="td"><?php echo $row['Gender']?></td>
+                  <td id="td"><?php echo $row['department']?></td>
+                  <td id="td"><?php echo $row['subject']?></td>
+                  <td id="td"><?php echo $row['salary']?></td>
+                </tr>
+              </table>
+              </center>
+              <?php
+					
+				}
+			?>
+          
+          
+          </div>
+
+        </div>
+
+
+
+
+
+            
+        <table>
+                <tr>
+                  <td>
+                    <input type="submit" name="departments" value="Departments">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="add_teacher" value="Add Teacher">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="edit_teacher" value="Edit Teacher">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="view_teacher" value="View Teachers">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="delete_teacher" value="Remove Teacher">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="salary_report" value="Salary Report">
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
