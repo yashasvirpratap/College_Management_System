@@ -19,8 +19,8 @@ CampusDash is a streamlined and user-friendly college management app designed to
 ### **Tech Stack** 💻
 
 - **Frontend**: HTML, CSS, Bootstrap
-- **Backend**: [Specify backend if applicable, e.g., Node.js, Express]
-- **Database**: [Specify database if applicable, e.g., MySQL, MongoDB]
+- **Backend**: Node.js
+- **Database**: MySQL
 
 ---
 
@@ -32,7 +32,7 @@ CampusDash is a streamlined and user-friendly college management app designed to
    cd campusdash
    ```
 
-2. **Setup Database** (if applicable):
+2. **Setup Database** :
    - Configure the database connection in the backend.
    - Run migrations or initial data setup.
 
@@ -40,10 +40,6 @@ CampusDash is a streamlined and user-friendly college management app designed to
    ```bash
    npm start  # or any relevant command for your backend setup
    ```
-
-4. **Access**:
-   - Admin Login: [Admin credentials setup]
-   - Teacher Login: [Teacher credentials setup]
 
 ---
 
